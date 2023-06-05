@@ -40,3 +40,5 @@ Route::get('/plantStore', [ProductController::class, 'index'])->name('plantStore
 Route::get('/checkout', [ProductController::class, 'checkout'])->name('checkout');
 Route::post('/session', [ProductController::class, 'session'])->name('session');
 Route::get('/success', [ProductController::class, 'success'])->name('success');
+
+Route::get('/paid', [ProductController::class, 'success'])->name('paid');
