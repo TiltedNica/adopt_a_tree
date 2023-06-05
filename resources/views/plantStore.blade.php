@@ -69,42 +69,32 @@
 
 
     <section class="form flex items-center justify-center mt-20">
-        <form action="" method="" class="w-[1000px] h-auto px-10 py-10 shadow-xl rounded-xl">
+        <form action="{{route('session')}}" method="POST" class="w-[1000px] h-auto px-10 py-10 shadow-xl rounded-xl">
+            @csrf
             <h2 class="text-center font-bold text-3xl text-slate-700">Completa nuestro formulario para validar tu adopcion</h2>
 
             <div class="form-wrapper mt-10 flex flex-wrap gap-10 justify-around">
                 <div class="label-wrapper lg:w-5/12 md:w-5/12 sm:w-full">
                     <label class="text-base font-bold text-slate-700">Nombre Completo:</label>
-                    <input type="text" name="" class="border-2 py-3 px-3 rounded-xl w-full mt-2">
-                </div>
-
-                <div class="label-wrapper lg:w-5/12 md:w-5/12 sm:w-full">
-                    <label class="text-base font-bold text-slate-700">Direccion de domicilio:</label>
-                    <input type="text" name="" class="border-2 py-3 px-3 rounded-xl w-full mt-2">
+                    <input type="text" name="name" class="border-2 py-3 px-3 rounded-xl w-full mt-2">
                 </div>
 
                 <div class="label-wrapper lg:w-5/12 md:w-5/12 sm:w-full">
                     <label class="text-base font-bold text-slate-700">Cantidad de plantas a adoptar</label>
-                    <input type="text" name="" class="border-2 py-3 px-3 rounded-xl w-full mt-2">
+                    <input type="number" name="quantity" class="border-2 py-3 px-3 rounded-xl w-full mt-2">
                 </div>
 
                 <div class="label-wrapper lg:w-5/12 md:w-5/12 sm:w-full">
                     <label class="text-base font-bold text-slate-700">Tipo de planta:</label>
-
-                    
-                    <select name="tipo_planta" class="border-2 py-3 px-3 rounded-xl w-full mt-2">
-                        <option value="planta1">
-                            <img src="{{asset('img/cipress_tree.jpeg')}}" alt="Planta 1" width="30" height="30"> Planta 1
-                        </option>
-                        <option value="planta2">
-                            <img src="{{asset('img/cipress_tree.jpeg')}}" alt="Planta 2" width="30" height="30"> Planta 2
-                        </option>
+                    <select name="plant_type" class="border-2 py-3 px-3 rounded-xl w-full mt-2">
+                        @foreach($products as $product)
+                            <option value="{{$product->name}}">{{$product->name}}</option>
+                        @endforeach
                     </select>
                 </div>
 
-                <div class="label-wrapper lg:w-5/12 md:w-5/12 sm:w-full">
-                    <label class="text-base font-bold text-slate-700">Monto a donar:</label>
-                    <input type="text" name="" class="border-2 py-3 px-3 rounded-xl w-full mt-2">
+                <div class="label-wrapper lg:w-5/12 md:w-5/12 sm:w-full flex items-end">
+                    <button type="submit" class="py-3 px-3 rounded-xl w-full mt-2 bg-[#00a23b] font-semibold text-white">Donar</button>
                 </div>
             </div>
         </form>
