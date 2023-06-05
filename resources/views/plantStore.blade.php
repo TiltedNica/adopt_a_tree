@@ -32,9 +32,9 @@
                 <span class="close cursor-pointer lg:hidden md:hidden sm:block absolute top-10 right-10 text-3xl font-bold text-slate-700">X</span>
 
                 <ul class="flex gap-x-6 text-gray-700 items-center">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre Nosotros</a></li>
-                    <li><a href="#volunteers">Voluntarios</a></li>
+                    <li><a href="{{route('index')}}">Inicio</a></li>
+                    <li><a href="{{route('index')}}">Sobre Nosotros</a></li>
+                    <li><a href="{{route('index')}}">Voluntarios</a></li>
                     <li><a href="#">Quiero adoptar</a></li>
                     <li><a href="#"></a></li>
 

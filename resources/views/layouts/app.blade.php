@@ -33,12 +33,11 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#volunteers">Volunteers</a></li>
-                    <li><a href="{{route('plantStore')}}">Quiero adoptar</a></li>
                     <li><a href="#"></a></li>
 
                     @auth()
-                    <div class="flex">
-
+                    <div class="flex gap-x-6 text-gray-700 items-center">
+                        <li><a href="{{route('plantStore')}}">Quiero adoptar</a></li>
                         <form action="{{route('logout')}}" method="POST">
                             @csrf
                             <button type="submit" class="px-7 py-4 bg-[#00a23b] font-semibold text-white rounded-xl">Cerrar Sesion</button>
@@ -71,7 +70,9 @@
             </h1>
             @endguest
 
-            <a href="{{route('catalogue')}}" class="donate py-4 px-10 bg-green-200 border-[3px] border-green-600 rounded-xl mt-20 relative font-semibold text-slate-700 z-0">Donar ahora</a>
+            @auth()
+                    <a href="{{route('plantStore')}}" class="donate py-4 px-10 bg-green-200 border-[3px] border-green-600 rounded-xl mt-20 relative font-semibold text-slate-700 z-0">Donar ahora</a>
+            @endauth
         </div>
 
     </section>

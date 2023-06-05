@@ -116,10 +116,12 @@
             </div>
         </div>
 
-        <a
-            class="mt-10 text-center py-3 px-10 bg-green-200 border-[3px] border-green-600 rounded-xl text-slate-700 font-bold"
-        >Descubre nuestro catalogo</a
-        >
+        @auth()
+            <a href="{{route('plantStore')}}"
+                class="mt-10 text-center py-3 px-10 bg-green-200 border-[3px] border-green-600 rounded-xl text-slate-700 font-bold"
+            >Descubre nuestro catalogo</a
+            >
+        @endauth
     </section>
 
     <section id="about" class="about_us mt-24 flex flex-wrap">

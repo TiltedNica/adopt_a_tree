@@ -28,7 +28,7 @@ class LogoutController extends Controller
     public function store(Request $request)
     {
         auth()->logout();
-        return redirect()->route('login');
+        return redirect()->route('index');
     }
 
     /**
