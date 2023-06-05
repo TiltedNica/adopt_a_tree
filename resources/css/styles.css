@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.text {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    background-size: 400%;
+    animation: move 15s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 15px;
+}
+
+.first, .second{
+    transition: 300ms ease-in-out;
+}
+
+.hamburguer:hover > .first{
+    transform: translateX(5px)
+}
+
+.hamburguer:hover > .second{
+    transform: translateX(10px)
+}
+
+
+@media (max-width:768px) {
+    nav{
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        transform: translateX(200%);
+    }
+
+    .active_nav{
+        display: block;
+        transform: translateX(0);
+    }
+
+    ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 40px;
+        font-size: 25px;
+
+    }
+}
+
+.navigator{
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 7px );
+}
+
+.swiper{
+    width: 500px;
+    height: 600px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+@media (max-width: 780px) {
+    .swiper{
+        width: 450px;
+        height: 450px;
+    }
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info{
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.skeleton{
+    width: 280px;
+    height: 400px;
+    border-radius: 12px;
+    background-color: rgb(229 231 235);
+}
+
+.skeleton::after{
+    content: '';
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.407);
+    top: 0;
+    left: 0;
+    animation: skeleton 2s ease-in-out infinite;
+}
+
+@keyframes skeleton {
+    0%{
+        top: -20%;
+    }
+
+    50%{
+        top: 150%;
+    }
+
+    100%{
+        top: -20%;
+    }
+}
+
+.box_volunteer {
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    z-index: 50;
+}
+
+.hide-image {
+    display: none;
+}

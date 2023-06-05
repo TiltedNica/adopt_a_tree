@@ -12,6 +12,7 @@
     />
     <title>Inicia Sesion</title>
     @vite('resources/css/app.css')
+    @vite('resources/css/styles.css')
 </head>
 
 <body>
