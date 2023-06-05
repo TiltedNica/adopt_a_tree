@@ -52,7 +52,7 @@
                     type="text"
                     id="name"
                     name="name"
-                    class="border-2 w-full px- py-3 rounded-xl mt-2 @error('name') border-red-500 @enderror"
+                    class="border-2 w-full px-3 py-3 rounded-xl mt-2 @error('name') border-red-500 @enderror"
                     value="{{old('name')}}"
 
                 />
@@ -66,7 +66,7 @@
                     type="text"
                     id="username"
                     name="username"
-                    class="border-2 w-full px- py-3 rounded-xl mt-2 @error('username') border-red-500 @enderror"
+                    class="border-2 w-full px-3 py-3 rounded-xl mt-2 @error('username') border-red-500 @enderror"
                     value="{{old('username')}}"
                 />
                 @error('username')
@@ -79,7 +79,7 @@
                     type="email"
                     id="email"
                     name="email"
-                    class="border-2 w-full px- py-3 rounded-xl mt-2 @error('email') border-red-500 @enderror"
+                    class="border-2 w-full px-3 py-3 rounded-xl mt-2 @error('email') border-red-500 @enderror"
                     value="{{old('email')}}"
                 />
                 @error('email')
@@ -93,7 +93,7 @@
                     type="password"
                     id="password"
                     name="password"
-                    class="border-2 w-full px- py-3 rounded-xl mt-2 @error('password') border-red-500 @enderror"
+                    class="border-2 w-full px-3 py-3 rounded-xl mt-2 @error('password') border-red-500 @enderror"
                 />
                 @error('password')
                     <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{$message}}</p>
@@ -106,7 +106,7 @@
                     type="password"
                     id="password_confirmation"
                     name="password_confirmation"
-                    class="border-2 w-full px- py-3 rounded-xl mt-2"
+                    class="border-2 w-full px-3 py-3 rounded-xl mt-2"
                 />
             </div>
 

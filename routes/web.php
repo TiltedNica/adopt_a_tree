@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\PlantStoreController;
 use App\Http\Controllers\CatalogueController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Auth\Events\Logout;
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,3 +32,5 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/catalogue', [CatalogueController::class, 'index'])->name('catalogue');
+
+Route::get('/plantStore', [PlantStoreController::class, 'index'])->name('plantStore');

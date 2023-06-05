@@ -16,7 +16,7 @@ class CatalogueController extends Controller
     }
     public function index()
     {
-        return view('catalogue');
+        return view('index');
     }
 
     /**

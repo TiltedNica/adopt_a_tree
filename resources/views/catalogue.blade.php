@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('title')
-    Catalogue
+    Home
 @endsection
 
-@section('content')
-    <h1>Catalogo...</h1>
-@endsection

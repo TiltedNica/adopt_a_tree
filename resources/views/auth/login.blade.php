@@ -56,7 +56,7 @@
                     type="text"
                     id="email"
                     name="email"
-                    class="border-2 w-full px- py-3 rounded-xl mt-2"
+                    class="border-2 w-full px-3 py-3 rounded-xl mt-2"
                 />
                 @error('email')
                 <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{$message}}</p>
@@ -69,7 +69,7 @@
                     id="password"
                     type="password"
                     name="password"
-                    class="border-2 w-full px- py-3 rounded-xl mt-2"
+                    class="border-2 w-full px-3 py-3 rounded-xl mt-2"
                 />
                 @error('password')
                 <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{$message}}</p>

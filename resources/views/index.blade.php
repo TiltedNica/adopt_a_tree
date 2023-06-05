@@ -246,7 +246,7 @@
         </div>
     </section>
 
-    <section id="voluntarios" class="mt-20 flex flex-col items-center">
+    <section id="volunteers" class="mt-20 flex flex-col items-center">
         <h2
             class="text-center font-bold lg:text-6xl md:text-6xl sm:text-5xl text-slate-700"
         >
