@@ -271,23 +271,21 @@
 
             <div class="box_volunteer w-[280px] h-[400px] shadow-lg rounded-xl relative">
                 <div class="skeleton"></div>
-                <img src="https://previews.123rf.com/images/antoniodiaz/antoniodiaz2107/antoniodiaz210700416/172185117-orgulloso-de-nuestro-trabajo-apuestos-j%C3%B3venes-voluntarios-con-shoverls-ayudando-a-plantar-%C3%A1rboles.jpg" class="w-full h-full object-cover rounded-xl z-50" alt="#" onload="showImage(this)">
-                <span class="info w-full h-20 rounded-xl flex justify-center items-center absolute bottom-0 left-0 text-2xl font-semibold text-white">Elizabeth Contreras</span>
+                <img src="https://st3.depositphotos.com/3261171/16143/i/600/depositphotos_161430716-stock-photo-schoolchildren-planting-young-fruit-trees.jpg" class="w-full h-full object-cover rounded-xl z-50" alt="#" onload="showImage(this)">
+                <span class="info w-full h-20 rounded-xl flex justify-center items-center absolute bottom-0 left-0 text-2xl font-semibold text-white">Carlos Suarez</span>
             </div>
 
             <div class="box_volunteer w-[280px] h-[400px] shadow-lg rounded-xl relative">
                 <div class="skeleton"></div>
-                <img src="https://previews.123rf.com/images/antoniodiaz/antoniodiaz2107/antoniodiaz210700416/172185117-orgulloso-de-nuestro-trabajo-apuestos-j%C3%B3venes-voluntarios-con-shoverls-ayudando-a-plantar-%C3%A1rboles.jpg" class="w-full h-full object-cover rounded-xl z-50" alt="#" onload="showImage(this)">
-                <span class="info w-full h-20 rounded-xl flex justify-center items-center absolute bottom-0 left-0 text-2xl font-semibold text-white">Elizabeth Contreras</span>
+                <img src="https://www.guatemala.com/fotos/2019/06/Convocatoria-de-voluntarios-para-sembrar-arboles-en-Guatemala-en-junio-de-20191-885x500.jpg" class="w-full h-full object-cover rounded-xl z-50" alt="#" onload="showImage(this)">
+                <span class="info w-full h-20 rounded-xl flex justify-center items-center absolute bottom-0 left-0 text-2xl font-semibold text-white">Diana Cuarezma</span>
             </div>
 
             <div class="box_volunteer w-[280px] h-[400px] shadow-lg rounded-xl relative">
                 <div class="skeleton"></div>
-                <img src="https://previews.123rf.com/images/antoniodiaz/antoniodiaz2107/antoniodiaz210700416/172185117-orgulloso-de-nuestro-trabajo-apuestos-j%C3%B3venes-voluntarios-con-shoverls-ayudando-a-plantar-%C3%A1rboles.jpg" class="w-full h-full object-cover rounded-xl z-50" alt="#" onload="showImage(this)">
-                <span class="info w-full h-20 rounded-xl flex justify-center items-center absolute bottom-0 left-0 text-2xl font-semibold text-white">Elizabeth Contreras</span>
+                <img src="https://www.guatemala.com/fotos/2020/08/plantemos-desde-casa.jpg" class="w-full h-full object-cover rounded-xl z-50" alt="#" onload="showImage(this)">
+                <span class="info w-full h-20 rounded-xl flex justify-center items-center absolute bottom-0 left-0 text-2xl font-semibold text-white">Lucía Romero</span>
             </div>
-
-        </div>
 
     </section>
 

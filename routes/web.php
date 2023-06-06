@@ -1,13 +1,11 @@
 <?php
 
-use App\Http\Controllers\PlantStoreController;
 use App\Http\Controllers\CatalogueController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\PlantStoreController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RegisterController;
-use Illuminate\Auth\Events\Logout;
-use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*

@@ -30,7 +30,6 @@ class RegisterController extends Controller
     public function store(Request $request)
     {
 
-
         $request->request->add(['username' => Str::slug($request->username)]);
 
         // Validation
@@ -38,7 +37,7 @@ class RegisterController extends Controller
             'name' => ['required', 'max:20'],
             'username' => ['required', 'unique:users', 'min:3', 'max:20'],
             'email' => ['required', 'unique:users', 'email', 'max:60'],
-            'password' => ['required', 'confirmed', 'min:6']
+            'password' => ['required', 'confirmed', 'min:6'],
         ]);
 
         $data['password'] = bcrypt($data['password']); //Hashing password

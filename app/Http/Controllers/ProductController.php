@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
-use http\Env;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -14,13 +13,13 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
+
         return view('plantStore', ['products' => $products]);
     }
 
     /**
      * Show the form for creating a new resource.
      */
-
     public function checkout()
     {
         return view('checkout');
@@ -40,17 +39,17 @@ class ProductController extends Controller
                 [
                     'price_data' => [
                         'currency' => 'USD',
-                        'product_data'=>[
-                            'name' => $type
+                        'product_data' => [
+                            'name' => $type,
                         ],
                         'unit_amount' => 3 * 100,
                     ],
-                    'quantity'=> $quantity
-                ]
+                    'quantity' => $quantity,
+                ],
             ],
-            'mode'=>'payment',
-            'success_url'=>route('success'),
-            'cancel_url'=>route('checkout'),
+            'mode' => 'payment',
+            'success_url' => route('success'),
+            'cancel_url' => route('checkout'),
         ]);
 
         return redirect()->away($session->url);

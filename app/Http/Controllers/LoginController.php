@@ -29,10 +29,10 @@ class LoginController extends Controller
     {
         $this->validate($request, [
             'email' => 'required|email',
-            'password' => 'required'
+            'password' => 'required',
         ]);
 
-        if(!auth()->attempt($request->only('email', 'password')) ) {
+        if (! auth()->attempt($request->only('email', 'password'))) {
             return back()->with('message', 'Credenciales Incorrectas');
         }
 
